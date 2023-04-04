@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+        />
+        <link rel="stylesheet" href="./assets/styles/main.scss" />
+    </head>
+    <body>
+        <h1>Input Tester</h1>
+
+        <h2>Number Input</h2>
+        <input type="number" placeholder="number input" />
+
+        <h2>Text Input</h2>
+        <p>This one is plain (no JS).</p>
+        <input type="text" placeholder="text input" />
+
+        <h2>Text Input</h2>
+        <p>This one has JS listening to it.</p>
+        <input id="numbers-with-slashes" type="text" placeholder="text input" />
+        <div id="messages"></div>
+
+        <h2>Telephone Input</h2>
+        <input type="tel" placeholder="telephone input" />
+        <script src="./assets/scripts/main.ts"></script>
+    </body>
+</html>

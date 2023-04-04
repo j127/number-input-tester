@@ -1,0 +1,34 @@
+{
+    "name": "parcel_example",
+    "version": "1.0.1",
+    "license": "Unlicense",
+    "scripts": {
+        "format": "prettier --write '**/*.{md,mdx,ts,js,jsx,tsx,yaml,yml,json,html,css,scss}'",
+        "clean": "rm -rf ./dist/*",
+        "start": "yarn clean && parcel ./src/index.html",
+        "build": "yarn clean && parcel build ./src/index.html",
+        "deploy:staging": "yarn build && netlify deploy --dir=dist",
+        "deploy": "yarn build && netlify deploy --prod --dir=dist",
+        "netlify:login": "netlify login",
+        "netlify:link": "netlify link",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "**/*.{js,jsx,ts,tsx,json,md,mdx,yml,yaml,html,css,scss}": [
+            "yarn format"
+        ]
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.8.3",
+        "@types/node": "^18.13.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.1.1",
+        "netlify-cli": "^12.12.0",
+        "parcel": "^2.8.3",
+        "parcel-reporter-static-files-copy": "^1.5.0",
+        "prettier": "^2.8.4",
+        "sass": "^1.58.0",
+        "typescript": "^4.9.5"
+    }
+}
