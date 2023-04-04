@@ -31,5 +31,4 @@ pg/
 deps/
 _build/
 .elixir_ls
-assets/
 priv/

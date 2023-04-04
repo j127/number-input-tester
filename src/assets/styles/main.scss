@@ -1,16 +1,17 @@
 // Replace the code here with your own CSS or SCSS.
 //
 // get more fonts from https://fonts.google.com/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap");
 
 body {
     font-family: Montserrat, sans-serif;
     line-height: 1.9rem;
     font-size: 1.1rem;
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-family: "Roboto Slab", serif;
     }
-
 }
 
 a {
